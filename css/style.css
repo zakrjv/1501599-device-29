@@ -43,6 +43,7 @@
   --basic-black: #000000;
   --basic-black-transparent-60: rgba(0, 0, 0, 0.6);
   --basic-black-transparent-50: rgba(0, 0, 0, 0.5);
+  --basic-black-transparent-40: rgba(0, 0, 0, 0.4);
   --basic-black-transparent-30: rgba(0, 0, 0, 0.3);
   --basic-black-transparent-20: rgba(0, 0, 0, 0.2);
   --basic-black-transparent-10: rgba(0, 0, 0, 0.1);
@@ -55,7 +56,10 @@
   --special-grey: #D9D9D9;
   --special-yellow: #f7e296;
   --special-green: #91c92f;
+
   --special-yellow-dark: #f0c52e;
+  --special-yellow-dark-transparent-60: rgba(240,197,46,0.6);
+  --special-yellow-dark-transparent-30: rgba(240,197,46,0.3);
 
   --basic-white: #FFFFFF;
   --basic-white-transparent-70: rgba(255, 255, 255, 0.7);
@@ -71,10 +75,10 @@
 
 /* Global */
 
-body {
+.page-body {
   min-width: 1200px;
   margin: 0;
-  padding: 0;
+  padding: 40px 0 0 0;
   font-family: var(--opensans-font-family);
   font-size: 15px;
   line-height: 28px;
@@ -91,9 +95,10 @@ img {
   height: auto;
 }
 
-* {
-  padding: 0;
-  margin: 0;
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
 }
 
 
@@ -127,21 +132,25 @@ img {
 
 /* User navigation */
 
-.user-routes a,
-.site-routes a {
+.user-routes-link,
+.site-routes-link {
   color: var(--basic-black);
 }
 
-.user-routes a:hover,
-.site-routes a:hover {
+.user-routes-link:hover,
+.site-routes-link:hover {
   color: var(--basic-black-transparent-60);
 }
 
-.user-routes a:focus {
+.user-routes-link:focus {
   color: var(--basic-black-transparent-30);
 }
 
-.site-routes a:active {
+.site-routes-link:active {
+  color: var(--basic-black-transparent-30);
+}
+
+.user-routes__log-off {
   color: var(--basic-black-transparent-30);
 }
 
@@ -492,4 +501,50 @@ img {
 
 .main-footer-right .user-routes-link:active {
   color: var(--basic-white-transparent-30);
+}
+
+
+/* SVG */
+
+.svg-logo__footer {
+  fill: var(--special-yellow-dark);
+}
+
+.logo:hover .svg-logo {
+  fill-opacity: 0.6;
+}
+
+.logo:active .svg-logo {
+  fill-opacity: 0.3;
+}
+
+.slider-btn {
+  border: none;
+  background-color: transparent;
+  fill: none;
+  stroke: var(--basic-black);
+}
+
+
+/* SVG catalog */
+
+.sorting-arrow {
+  border: none;
+  background-color: transparent;
+}
+
+.sorting-arrow__up {
+  fill: var(--basic-black-transparent-20);
+}
+
+.sorting-arrow__down {
+  fill: var(--basic-black);
+}
+
+.sorting-arrow_use:hover {
+  fill: var(--basic-black-transparent-40);
+}
+
+.sorting-arrow_use:active {
+  fill: var(--basic-black);
 }
