@@ -282,6 +282,16 @@ img {
   list-style: none;
 }
 
+.partners-list img {
+  filter: grayscale(100%);
+  opacity: 0.2;
+}
+
+.partners-list img:hover {
+  filter: none;
+  opacity: 1;
+}
+
 
 /* About us */
 
