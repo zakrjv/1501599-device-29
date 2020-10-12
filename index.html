@@ -9,10 +9,10 @@
 
 <body class="page-body">
 
-<header class="main-header">
+<header class="main-header container">
 
   <nav class="main-navigation">
-    <a class="logo">
+    <a class="logo logo-header">
       <svg width="163" height="35" viewBox="0 0 163 35" fill="none" xmlns="http://www.w3.org/2000/svg">
         <path class="svg-logo" fill-rule="evenodd" clip-rule="evenodd"
               d="M-0.151001 0.701993V34.302H13.381C15.5624 34.3553 17.7309 33.954 19.7487 33.1235C21.7665 32.2929 23.5892 31.0514 25.101 29.478C26.6506 27.9007 27.8665 26.0273 28.6761 23.9697C29.4857 21.912 29.8724 19.7124 29.813 17.502C29.8724 15.2916 29.4857 13.092 28.6761 11.0343C27.8665 8.97669 26.6506 7.1033 25.101 5.52599C23.5891 3.9527 21.7663 2.7113 19.7486 1.88079C17.7308 1.05028 15.5623 0.648834 13.381 0.701993H-0.151001ZM7.582 26.91V8.09099H13.382C14.5845 8.04309 15.7838 8.24675 16.903 8.68895C18.0223 9.13115 19.0369 9.80215 19.882 10.659C20.7304 11.5766 21.3875 12.6541 21.8149 13.8285C22.2422 15.0029 22.4313 16.2507 22.371 17.499C22.4313 18.7473 22.2423 19.9951 21.8149 21.1695C21.3876 22.3439 20.7305 23.4214 19.882 24.339C19.0371 25.196 18.0225 25.8672 16.9032 26.3094C15.7839 26.7516 14.5845 26.9551 13.382 26.907H7.582V26.91ZM42.382 20.958H54.464V13.658H42.378V8.09099H55.669V0.701993H34.645V34.302H55.91V26.91H42.378V20.958H42.382ZM78.725 34.302L89.744 0.701993H81.286L73.795 25.422L66.304 0.701993H57.847L68.866 34.302H78.725ZM93.125 34.302H100.858V0.701993H93.125V34.302ZM131.74 32.886C134.233 31.574 136.321 29.6076 137.781 27.198L131.111 23.358C130.381 24.659 129.279 25.7121 127.946 26.382C126.505 27.1262 124.903 27.504 123.282 27.482C121.962 27.5449 120.643 27.3343 119.408 26.8635C118.173 26.3927 117.048 25.6718 116.105 24.746C115.195 23.7791 114.489 22.6393 114.028 21.3942C113.568 20.1492 113.362 18.8242 113.423 17.498C113.362 16.1718 113.568 14.8468 114.028 13.6017C114.489 12.3567 115.195 11.2168 116.105 10.25C117.048 9.32422 118.173 8.60333 119.408 8.13252C120.643 7.6617 121.962 7.45113 123.282 7.51399C124.893 7.49098 126.486 7.86172 127.921 8.59399C129.263 9.2718 130.373 10.3326 131.111 11.642L137.781 7.80199C136.294 5.39746 134.191 3.43378 131.691 2.11399C129.109 0.720899 126.216 0.00268346 123.282 0.0259933C113.503 -0.246007 105.485 7.71699 105.691 17.498C105.483 27.279 113.5 35.245 123.279 34.974C126.229 35.0012 129.138 34.283 131.737 32.886H131.74ZM149.621 20.958H161.703V13.658H149.618V8.09099H162.908V0.701993H141.885V34.302H163.15V26.91H149.618V20.958H149.621Z"
@@ -79,164 +79,175 @@
 
 </header>
 
-<main class="container">
-  <h1>Интернет-магазин «Device»</h1>
+<main>
+  <h1 class="visually-hidden">Интернет-магазин «Device»</h1>
 
-  <section class="promo-slider">
+  <section class="promo-slider container">
     <ul class="promo-slider__list">
       <li class="promo-slider__item promo-slider__item_active">
-        <img
-          src="img/promo-slider/selfie-stick-slider.png" width="384" height="486"
-          alt="Палка для селфи"
+        <img class="promo-slider__image"
+             src="img/promo-slider/selfie-stick-slider.png" width="384" height="486"
+             alt="Палка для селфи"
         />
-        <p class="promo-slider__title title">
-          Делай селфи, <br/>
-          как Бен Стиллер!
-        </p>
-        <p class="promo-slider__description">
-          Самая длинная палка для селфи доступна в нашем магазине. <br/>
-          Восемь (Восемь, Карл!) метров длиной и весом всего 5 килограмм.
-        </p>
-        <a href="#" class="btn">Подробнее</a>
-        <table class="promo-slider-table">
-          <tr>
-            <td>8,5 м</td>
-            <td>5 кг</td>
-            <td>Карбон</td>
-          </tr>
-          <tr>
-            <th>Длина палки</th>
-            <th>Вес палки</th>
-            <th>Материал</th>
-          </tr>
-        </table>
+        <div class="promo-slider__content">
+          <p class="promo-slider__title title">
+            Делай селфи, <br/>
+            как Бен Стиллер!
+          </p>
+          <p class="promo-slider__description">
+            Самая длинная палка для селфи доступна в нашем магазине. <br/>
+            Восемь (Восемь, Карл!) метров длиной и весом всего 5 килограмм.
+          </p>
+          <a href="#" class="btn">Подробнее</a>
+          <table class="promo-slider-table">
+            <tr>
+              <td>8,5 м</td>
+              <td>5 кг</td>
+              <td>Карбон</td>
+            </tr>
+            <tr>
+              <th>Длина палки</th>
+              <th>Вес палки</th>
+              <th>Материал</th>
+            </tr>
+          </table>
+        </div>
       </li>
 
       <li class="promo-slider__item">
-        <img
-          src="img/promo-slider/fitness-bracelet-slider.png" width="345" height="483"
-          alt="Фитнес-браслеты"
+        <img class="promo-slider__image"
+             src="img/promo-slider/fitness-bracelet-slider.png" width="345" height="483"
+             alt="Фитнес-браслеты"
         />
-        <p class="promo-slider__title title">
-          Худеем <br/>
-          правильно!
-        </p>
-        <p class="promo-slider__description">
-          Мотивирующие фитнес-браслеты помогут найти в себе силы <br/>
-          не пропускать занятия и соблюдать диету.
-        </p>
-        <a href="#" class="btn">Подробнее</a>
-        <table class="promo-slider-table">
-          <tr>
-            <td>48 часов</td>
-          </tr>
-          <tr>
-            <th>Без подзарядки</th>
-          </tr>
-        </table>
+        <div class="promo-slider__content">
+          <p class="promo-slider__title title">
+            Худеем <br/>
+            правильно!
+          </p>
+          <p class="promo-slider__description">
+            Мотивирующие фитнес-браслеты помогут найти в себе силы <br/>
+            не пропускать занятия и соблюдать диету.
+          </p>
+          <a href="#" class="btn">Подробнее</a>
+          <table class="promo-slider-table">
+            <tr>
+              <td>48 часов</td>
+            </tr>
+            <tr>
+              <th>Без подзарядки</th>
+            </tr>
+          </table>
+        </div>
       </li>
 
       <li class="promo-slider__item">
-        <img src="img/promo-slider/quadcopter-slider.png" width="526" height="334" alt="Квадрокоптер"/>
-        <p class="promo-slider__title title">
-          Порхает как бабочка,<br/>
-          жалит как пчела!
-        </p>
-        <p class="promo-slider__description">
-          Этот обычный, на первый взгляд, квадрокоптер оснащен <br/>
-          мощным лазером, замаскированным под стандартную камеру.
-        </p>
-        <a href="#" class="btn">Подробнее</a>
-        <table class="promo-slider-table">
-          <tr>
-            <td>800 м</td>
-            <td>50 м</td>
-          </tr>
-          <tr>
-            <th>Дальность полета</th>
-            <th>Радиус поражения</th>
-          </tr>
-        </table>
+        <img class="promo-slider__image"
+             src="img/promo-slider/quadcopter-slider.png" width="526" height="334"
+             alt="Квадрокоптер"/>
+        <div class="promo-slider__content">
+          <p class="promo-slider__title title">
+            Порхает как бабочка,<br/>
+            жалит как пчела!
+          </p>
+          <p class="promo-slider__description">
+            Этот обычный, на первый взгляд, квадрокоптер оснащен <br/>
+            мощным лазером, замаскированным под стандартную камеру.
+          </p>
+          <a href="#" class="btn">Подробнее</a>
+          <table class="promo-slider-table">
+            <tr>
+              <td>800 м</td>
+              <td>50 м</td>
+            </tr>
+            <tr>
+              <th>Дальность полета</th>
+              <th>Радиус поражения</th>
+            </tr>
+          </table>
+        </div>
       </li>
+
     </ul>
 
-    <button class="slider-btn" type="button">
-      <svg width="13" height="13">
-        <circle r="6" cx="50%" cy="50%"></circle>
-        <circle r="3" cx="50%" cy="50%"></circle>
-      </svg>
-    </button>
-    <button class="slider-btn" type="button">
-      <svg width="13" height="13">
-        <circle r="6" cx="50%" cy="50%"></circle>
-      </svg>
-    </button>
-    <button class="slider-btn" type="button">
-      <svg width="13" height="13">
-        <circle r="6" cx="50%" cy="50%"></circle>
-      </svg>
-    </button>
+    <div class="btn-">
+      <button class="slider-btn" type="button">
+        <svg width="13" height="13">
+          <circle r="6" cx="50%" cy="50%"></circle>
+          <circle r="3" cx="50%" cy="50%"></circle>
+        </svg>
+      </button>
+      <button class="slider-btn" type="button">
+        <svg width="13" height="13">
+          <circle r="6" cx="50%" cy="50%"></circle>
+        </svg>
+      </button>
+      <button class="slider-btn" type="button">
+        <svg width="13" height="13">
+          <circle r="6" cx="50%" cy="50%"></circle>
+        </svg>
+      </button>
+    </div>
 
   </section>
 
-  <section class="popular">
-    <h2>Каталог</h2>
+  <section class="popular container">
+    <h2 class="visually-hidden">Популярное</h2>
     <ul class="popular-list">
-      <li class="popular-item"><a href="#">Виртуальная реальность</a></li>
-      <li class="popular-item"><a href="#">Моноподы для селфи</a></li>
-      <li class="popular-item"><a href="#">Экшн-камеры</a></li>
-      <li class="popular-item"><a href="#">Фитнес-браслеты</a></li>
-      <li class="popular-item"><a href="#">Умные часы</a></li>
-      <li class="popular-item"><a href="#">Квадрокоптеры</a></li>
+      <li class="popular-item"><a class="popular-link" href="#">Виртуальная реальность</a></li>
+      <li class="popular-item"><a class="popular-link" href="#">Моноподы для селфи</a></li>
+      <li class="popular-item"><a class="popular-link" href="#">Экшн-камеры</a></li>
+      <li class="popular-item"><a class="popular-link" href="#">Фитнес-браслеты</a></li>
+      <li class="popular-item"><a class="popular-link" href="#">Умные часы</a></li>
+      <li class="popular-item"><a class="popular-link" href="#">Квадрокоптеры</a></li>
     </ul>
   </section>
 
   <section class="services-slider">
-    <div class="services-slider-wrapper">
-      <div class="container">
-        <ul class="services-slider-controls">
-          <li>
-            <button class="btn services-slider__btn" type="button">Доставка</button>
-          </li>
-          <li>
-            <button class="btn services-slider__btn" type="button">Гарантия</button>
-          </li>
-          <li>
-            <button class="btn services-slider__btn" type="button">Кредит</button>
-          </li>
-        </ul>
+    <div class="services-grid container">
 
-        <ul class="services-slider-list">
-          <li class="services-slider-item services-slider__item_active">
-            <h2 class="section-title title">Доставка</h2>
-            <p>
-              Мы с удовольствием доставим ваш товар прямо к вашему подъезду
-              совершенно бесплатно! Ведь мы неплохо заработаем, поднимая его на
-              ваш этаж.
-            </p>
-          </li>
-          <li class="services-slider-item">
-            <h2 class="section-title title">Гарантия</h2>
-            <p>
-              Если из-за возгорания купленного у нас товара у вас сгорит дом — не
-              переживайте, мы выдадим вам новый. Товар, не дом, конечно же.
-            </p>
-          </li>
-          <li class="services-slider-item">
-            <h2 class="section-title title">Кредит</h2>
-            <p>
-              Залезть в долговую яму стало проще! Кредитные консультанты подберут
-              для вас наиболее выгодные условия кредита. Выгодные для нашего
-              банка, разумеется.
-            </p>
-          </li>
-        </ul>
-      </div>
+      <ul class="services-slider-controls">
+        <li>
+          <button class="btn services-slider__btn" type="button">Доставка</button>
+        </li>
+        <li>
+          <button class="btn services-slider__btn" type="button">Гарантия</button>
+        </li>
+        <li>
+          <button class="btn services-slider__btn" type="button">Кредит</button>
+        </li>
+      </ul>
+
+      <ul class="services-slider-list">
+        <li class="services-slider-item services-slider__item_active">
+          <h2 class="section-title title">Доставка</h2>
+          <p>
+            Мы с удовольствием доставим ваш товар прямо к вашему подъезду
+            совершенно бесплатно! Ведь мы неплохо заработаем, поднимая его на
+            ваш этаж.
+          </p>
+        </li>
+        <li class="services-slider-item">
+          <h2 class="section-title title">Гарантия</h2>
+          <p>
+            Если из-за возгорания купленного у нас товара у вас сгорит дом — не
+            переживайте, мы выдадим вам новый. Товар, не дом, конечно же.
+          </p>
+        </li>
+        <li class="services-slider-item">
+          <h2 class="section-title title">Кредит</h2>
+          <p>
+            Залезть в долговую яму стало проще! Кредитные консультанты подберут
+            для вас наиболее выгодные условия кредита. Выгодные для нашего
+            банка, разумеется.
+          </p>
+        </li>
+      </ul>
+
     </div>
   </section>
 
-  <section class="partners">
-    <h2>Партнёры</h2>
+  <section class="partners container">
+    <h2 class="visually-hidden">Партнёры</h2>
     <ul class="partners-list">
       <li class="partners-item">
         <a href="#">
@@ -245,7 +256,7 @@
       </li>
       <li class="partners-item">
         <a href="#">
-          <img src="img/partners/adgets.jpg" width="260" height="100" alt="gadgets"/>
+          <img src="img/partners/gadgets.jpg" width="260" height="100" alt="gadgets"/>
         </a>
       </li>
       <li class="partners-item">
@@ -261,15 +272,15 @@
     </ul>
   </section>
 
-  <div class="index-columns">
+  <div class="index-columns container">
     <section class="about-us">
       <h2 class="section-title title">О нас</h2>
       <p>
-        Огромный выбор гаджетов не оставит равнодушным гика, который есть в
+        Огромный выбор гаджетов не оставит равнодушным гика, <br> который есть в
         каждом из нас.
       </p>
       <p>
-        Мы можем доставить ваш товар в самые отдаленные точки России! DEVICE
+        Мы можем доставить ваш товар в самые отдаленные точки <br> России! DEVICE
         работает со многими транспортными компаниями:
       </p>
       <ul class="about-us__list">
@@ -295,10 +306,10 @@
 </main>
 
 <footer class="main-footer">
-  <div class="main-footer-wrapper">
+  <div class="container">
 
     <section class="main-footer-left">
-      <a class="logo">
+      <a class="logo main-footer-logo">
         <svg width="163" height="35" viewBox="0 0 163 35" fill="none" xmlns="http://www.w3.org/2000/svg">
           <path class="svg-logo svg-logo__footer" fill-rule="evenodd" clip-rule="evenodd"
                 d="M-0.151001 0.701993V34.302H13.381C15.5624 34.3553 17.7309 33.954 19.7487 33.1235C21.7665 32.2929 23.5892 31.0514 25.101 29.478C26.6506 27.9007 27.8665 26.0273 28.6761 23.9697C29.4857 21.912 29.8724 19.7124 29.813 17.502C29.8724 15.2916 29.4857 13.092 28.6761 11.0343C27.8665 8.97669 26.6506 7.1033 25.101 5.52599C23.5891 3.9527 21.7663 2.7113 19.7486 1.88079C17.7308 1.05028 15.5623 0.648834 13.381 0.701993H-0.151001ZM7.582 26.91V8.09099H13.382C14.5845 8.04309 15.7838 8.24675 16.903 8.68895C18.0223 9.13115 19.0369 9.80215 19.882 10.659C20.7304 11.5766 21.3875 12.6541 21.8149 13.8285C22.2422 15.0029 22.4313 16.2507 22.371 17.499C22.4313 18.7473 22.2423 19.9951 21.8149 21.1695C21.3876 22.3439 20.7305 23.4214 19.882 24.339C19.0371 25.196 18.0225 25.8672 16.9032 26.3094C15.7839 26.7516 14.5845 26.9551 13.382 26.907H7.582V26.91ZM42.382 20.958H54.464V13.658H42.378V8.09099H55.669V0.701993H34.645V34.302H55.91V26.91H42.378V20.958H42.382ZM78.725 34.302L89.744 0.701993H81.286L73.795 25.422L66.304 0.701993H57.847L68.866 34.302H78.725ZM93.125 34.302H100.858V0.701993H93.125V34.302ZM131.74 32.886C134.233 31.574 136.321 29.6076 137.781 27.198L131.111 23.358C130.381 24.659 129.279 25.7121 127.946 26.382C126.505 27.1262 124.903 27.504 123.282 27.482C121.962 27.5449 120.643 27.3343 119.408 26.8635C118.173 26.3927 117.048 25.6718 116.105 24.746C115.195 23.7791 114.489 22.6393 114.028 21.3942C113.568 20.1492 113.362 18.8242 113.423 17.498C113.362 16.1718 113.568 14.8468 114.028 13.6017C114.489 12.3567 115.195 11.2168 116.105 10.25C117.048 9.32422 118.173 8.60333 119.408 8.13252C120.643 7.6617 121.962 7.45113 123.282 7.51399C124.893 7.49098 126.486 7.86172 127.921 8.59399C129.263 9.2718 130.373 10.3326 131.111 11.642L137.781 7.80199C136.294 5.39746 134.191 3.43378 131.691 2.11399C129.109 0.720899 126.216 0.00268346 123.282 0.0259933C113.503 -0.246007 105.485 7.71699 105.691 17.498C105.483 27.279 113.5 35.245 123.279 34.974C126.229 35.0012 129.138 34.283 131.737 32.886H131.74ZM149.621 20.958H161.703V13.658H149.618V8.09099H162.908V0.701993H141.885V34.302H163.15V26.91H149.618V20.958H149.621Z"
