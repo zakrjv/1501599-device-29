@@ -20,58 +20,60 @@
       </svg>
     </a>
 
-    <form class="main-search" action="https://echo.htmlacademy.ru/" method="post">
-      <label for="main-search__input"></label>
-      <input class="main-search__input" id="main-search__input" type="search" name="search"
-             placeholder="Поиск по сайту">
-      <button class="main-search__button" type="submit">Найти</button>
-    </form>
+    <div class="user-routes-grid">
+      <form class="main-search" action="https://echo.htmlacademy.ru/" method="post">
+        <label for="main-search__input"></label>
+        <input class="main-search__input" id="main-search__input" type="search" name="search"
+               placeholder="Поиск по сайту" autocomplete="off">
+        <button class="main-search__button" type="submit">Найти</button>
+      </form>
 
-    <ul class="user-routes">
-      <li>
-        <a class="user-routes-link" href="#">Войти</a>
-      </li>
-      <li>
-        <a class="user-routes-link" href="#">Сравнить</a>
-      </li>
-      <li>
-        <a class="user-routes-link" href="#">Корзина</a>
-      </li>
-    </ul>
+      <ul class="user-routes">
+        <li class="user-routes-item">
+          <a class="user-routes-link" href="#">Войти</a>
+        </li>
+        <li class="user-routes-item user-routes-compare">
+          <a class="user-routes-link " href="#">Сравнить</a>
+        </li>
+        <li class="user-routes-item">
+          <a class="user-routes-link" href="#">Корзина</a>
+        </li>
+      </ul>
+    </div>
 
     <ul class="site-routes">
-      <li class="catalog-link">
-        <a class="site-routes-link" href="catalog.html">Каталог товаров</a>
+      <li class="site-routes-item site-routes-catalog">
+        <a class="site-routes-link catalog-link" href="catalog.html">Каталог товаров</a>
 
         <ul class="catalog-routes">
-          <li>
+          <li class="catalog-routes-item">
             <a class="site-routes-link" href="#">Виртуальная реальность</a>
           </li>
-          <li>
+          <li class="catalog-routes-item">
             <a class="site-routes-link" href="catalog.html">Моноподы для селфи</a>
           </li>
-          <li>
+          <li class="catalog-routes-item">
             <a class="site-routes-link" href="#">Экшн-камеры</a>
           </li>
-          <li>
+          <li class="catalog-routes-item">
             <a class="site-routes-link" href="#">Фитнес-браслеты</a>
           </li>
-          <li>
+          <li class="catalog-routes-item">
             <a class="site-routes-link" href="#">Умные часы</a>
           </li>
-          <li>
+          <li class="catalog-routes-item">
             <a class="site-routes-link" href="#">Квадрокоптер</a>
           </li>
         </ul>
 
       </li>
-      <li>
+      <li class="site-routes-item site-routes-delivery">
         <a class="site-routes-link" href="#">Доставка</a>
       </li>
-      <li>
+      <li class="site-routes-item site-routes-warranty">
         <a class="site-routes-link" href="#">Гарантия</a>
       </li>
-      <li>
+      <li class="site-routes-item">
         <a class="site-routes-link" href="#">Контакты</a>
       </li>
     </ul>
@@ -169,7 +171,7 @@
 
     </ul>
 
-    <div class="btn-">
+    <div class="btn-dots">
       <button class="slider-btn" type="button">
         <svg width="13" height="13">
           <circle r="6" cx="50%" cy="50%"></circle>
@@ -206,13 +208,13 @@
     <div class="services-grid container">
 
       <ul class="services-slider-controls">
-        <li>
+        <li class="services-controls-item">
           <button class="btn services-slider__btn" type="button">Доставка</button>
         </li>
-        <li>
+        <li class="services-controls-item">
           <button class="btn services-slider__btn" type="button">Гарантия</button>
         </li>
-        <li>
+        <li class="services-controls-item">
           <button class="btn services-slider__btn" type="button">Кредит</button>
         </li>
       </ul>
@@ -308,7 +310,7 @@
 <footer class="main-footer">
   <div class="container">
 
-    <section class="main-footer-left">
+    <section class="main-footer-top">
       <a class="logo main-footer-logo">
         <svg width="163" height="35" viewBox="0 0 163 35" fill="none" xmlns="http://www.w3.org/2000/svg">
           <path class="svg-logo svg-logo__footer" fill-rule="evenodd" clip-rule="evenodd"
@@ -316,47 +318,47 @@
                 fill="black"/>
         </svg>
       </a>
-      <p>г. Москва, ул. Строителей, 15</p>
-    </section>
-
-    <section class="main-footer-middle">
-      <ul class="site-routes">
-        <li>
-          <a class="site-routes-link" href="#">Доставка</a>
-        </li>
-        <li>
-          <a class="site-routes-link" href="#">Гарантия</a>
-        </li>
-        <li>
-          <a class="site-routes-link" href="#">Контакты</a>
-        </li>
-      </ul>
-      <ul class="social">
-        <li>
-          <a class="social-link" href="#">Фейсбук</a>
-        </li>
-        <li>
-          <a class="social-link" href="#">Инстаграм</a>
-        </li>
-        <li>
-          <a class="social-link" href="#">Твиттер</a>
-        </li>
-      </ul>
-    </section>
-
-    <section class="main-footer-right">
       <ul class="user-routes">
-        <li>
+        <li class="user-routes-item">
           <a class="user-routes-link" href="#">Войти</a>
         </li>
-        <li>
+        <li class="user-routes-item">
           <a class="user-routes-link" href="#">Сравнить</a>
         </li>
-        <li>
+        <li class="user-routes-item">
           <a class="user-routes-link" href="#">Корзина</a>
         </li>
       </ul>
-      <p>Тел.: <a class="main-footer__phone" href="tel:+74954959595">+7 (495) 495-95-95</a></p>
+    </section>
+
+    <section class="main-footer-middle">
+      <p>г. Москва, ул. Строителей, 15</p>
+      <ul class="site-routes">
+        <li class="site-routes-item">
+          <a class="site-routes-link" href="#">Доставка</a>
+        </li>
+        <li class="site-routes-item">
+          <a class="site-routes-link" href="#">Гарантия</a>
+        </li>
+        <li class="site-routes-item">
+          <a class="site-routes-link" href="#">Контакты</a>
+        </li>
+      </ul>
+      <a class="main-footer__phone" href="tel:+74954959595">Тел.: +7 (495) 495-95-95</a>
+    </section>
+
+    <section class="main-footer-bottom">
+      <ul class="social">
+        <li class="social-item">
+          <a class="social-link" href="#">Фейсбук</a>
+        </li>
+        <li class="social-item">
+          <a class="social-link" href="#">Инстаграм</a>
+        </li>
+        <li class="social-item">
+          <a class="social-link" href="#">Твиттер</a>
+        </li>
+      </ul>
       <a href="https://htmlacademy.ru/intensive/htmlcss">HTML Academy</a>
     </section>
 
