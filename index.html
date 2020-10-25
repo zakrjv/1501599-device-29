@@ -22,7 +22,7 @@
 
     <div class="user-routes-grid">
       <form class="main-search" action="https://echo.htmlacademy.ru/" method="post">
-        <label for="main-search__input"></label>
+        <label class="visually-hidden" for="main-search__input">Поиск по сайту</label>
         <input class="main-search__input" id="main-search__input" type="search" name="search"
                placeholder="Поиск по сайту" autocomplete="off">
         <button class="main-search__button" type="submit">Найти</button>
@@ -30,13 +30,13 @@
 
       <ul class="user-routes">
         <li class="user-routes-item">
-          <a class="user-routes-link" href="#">Войти</a>
-        </li>
-        <li class="user-routes-item user-routes-compare">
-          <a class="user-routes-link " href="#">Сравнить</a>
+          <a class="user-routes-link user-routes-link-login" href="#">Войти</a>
         </li>
         <li class="user-routes-item">
-          <a class="user-routes-link" href="#">Корзина</a>
+          <a class="user-routes-link user-routes-link-compare" href="#">Сравнить</a>
+        </li>
+        <li class="user-routes-item">
+          <a class="user-routes-link user-routes-link-basket" href="#">Корзина</a>
         </li>
       </ul>
     </div>
@@ -67,14 +67,14 @@
         </ul>
 
       </li>
-      <li class="site-routes-item site-routes-delivery">
-        <a class="site-routes-link" href="#">Доставка</a>
-      </li>
-      <li class="site-routes-item site-routes-warranty">
-        <a class="site-routes-link" href="#">Гарантия</a>
+      <li class="site-routes-item">
+        <a class="site-routes-link site-routes-delivery" href="#">Доставка</a>
       </li>
       <li class="site-routes-item">
-        <a class="site-routes-link" href="#">Контакты</a>
+        <a class="site-routes-link site-routes-warranty" href="#">Гарантия</a>
+      </li>
+      <li class="site-routes-item">
+        <a class="site-routes-link site-routes-contacts" href="#">Контакты</a>
       </li>
     </ul>
   </nav>
@@ -86,7 +86,7 @@
 
   <section class="promo-slider container">
     <ul class="promo-slider__list">
-      <li class="promo-slider__item promo-slider__item_active">
+      <li class="promo-slider__item promo-slider-1 promo-slider__item_active">
         <img class="promo-slider__image"
              src="img/promo-slider/selfie-stick-slider.png" width="384" height="486"
              alt="Палка для селфи"
@@ -100,7 +100,9 @@
             Самая длинная палка для селфи доступна в нашем магазине. <br/>
             Восемь (Восемь, Карл!) метров длиной и весом всего 5 килограмм.
           </p>
-          <a href="#" class="btn">Подробнее</a>
+          <a href="#" class="btn">
+            <span class="btn-text">Подробнее</span>
+          </a>
           <table class="promo-slider-table">
             <tr>
               <td>8,5 м</td>
@@ -116,7 +118,7 @@
         </div>
       </li>
 
-      <li class="promo-slider__item">
+      <li class="promo-slider__item promo-slider-2">
         <img class="promo-slider__image"
              src="img/promo-slider/fitness-bracelet-slider.png" width="345" height="483"
              alt="Фитнес-браслеты"
@@ -130,7 +132,9 @@
             Мотивирующие фитнес-браслеты помогут найти в себе силы <br/>
             не пропускать занятия и соблюдать диету.
           </p>
-          <a href="#" class="btn">Подробнее</a>
+          <a href="#" class="btn">
+            <span class="btn-text">Подробнее</span>
+          </a>
           <table class="promo-slider-table">
             <tr>
               <td>48 часов</td>
@@ -142,7 +146,7 @@
         </div>
       </li>
 
-      <li class="promo-slider__item">
+      <li class="promo-slider__item promo-slider-3">
         <img class="promo-slider__image"
              src="img/promo-slider/quadcopter-slider.png" width="526" height="334"
              alt="Квадрокоптер"/>
@@ -155,7 +159,9 @@
             Этот обычный, на первый взгляд, квадрокоптер оснащен <br/>
             мощным лазером, замаскированным под стандартную камеру.
           </p>
-          <a href="#" class="btn">Подробнее</a>
+          <a href="#" class="btn">
+            <span class="btn-text">Подробнее</span>
+          </a>
           <table class="promo-slider-table">
             <tr>
               <td>800 м</td>
@@ -172,22 +178,9 @@
     </ul>
 
     <div class="btn-dots">
-      <button class="slider-btn" type="button">
-        <svg width="13" height="13">
-          <circle r="6" cx="50%" cy="50%"></circle>
-          <circle r="3" cx="50%" cy="50%"></circle>
-        </svg>
-      </button>
-      <button class="slider-btn" type="button">
-        <svg width="13" height="13">
-          <circle r="6" cx="50%" cy="50%"></circle>
-        </svg>
-      </button>
-      <button class="slider-btn" type="button">
-        <svg width="13" height="13">
-          <circle r="6" cx="50%" cy="50%"></circle>
-        </svg>
-      </button>
+      <button class="slider-btn slider-btn-current" type="button" aria-label="Первый слайд"></button>
+      <button class="slider-btn" type="button" aria-label="Второй слайд"></button>
+      <button class="slider-btn" type="button" aria-label="Третий слайд"></button>
     </div>
 
   </section>
@@ -195,12 +188,12 @@
   <section class="popular container">
     <h2 class="visually-hidden">Популярное</h2>
     <ul class="popular-list">
-      <li class="popular-item"><a class="popular-link" href="#">Виртуальная реальность</a></li>
-      <li class="popular-item"><a class="popular-link" href="#">Моноподы для селфи</a></li>
-      <li class="popular-item"><a class="popular-link" href="#">Экшн-камеры</a></li>
-      <li class="popular-item"><a class="popular-link" href="#">Фитнес-браслеты</a></li>
-      <li class="popular-item"><a class="popular-link" href="#">Умные часы</a></li>
-      <li class="popular-item"><a class="popular-link" href="#">Квадрокоптеры</a></li>
+      <li class="popular-item"><a class="popular-link popular-link-vr" href="#">Виртуальная реальность</a></li>
+      <li class="popular-item"><a class="popular-link popular-link-monopods" href="#">Моноподы<br> для селфи</a></li>
+      <li class="popular-item"><a class="popular-link popular-link-camera" href="#">Экшн-камеры</a></li>
+      <li class="popular-item"><a class="popular-link popular-link-fit" href="#">Фитнес-браслеты</a></li>
+      <li class="popular-item"><a class="popular-link popular-link-watch" href="#">Умные часы</a></li>
+      <li class="popular-item"><a class="popular-link popular-link-copter" href="#">Квадрокоптеры</a></li>
     </ul>
   </section>
 
@@ -209,37 +202,37 @@
 
       <ul class="services-slider-controls">
         <li class="services-controls-item">
-          <button class="btn services-slider__btn" type="button">Доставка</button>
+          <button class="btn services-slider__btn_active" type="button"><span class="btn-text">Доставка</span></button>
         </li>
         <li class="services-controls-item">
-          <button class="btn services-slider__btn" type="button">Гарантия</button>
+          <button class="btn" type="button"><span class="btn-text">Гарантия</span></button>
         </li>
         <li class="services-controls-item">
-          <button class="btn services-slider__btn" type="button">Кредит</button>
+          <button class="btn" type="button"><span class="btn-text">Кредит</span></button>
         </li>
       </ul>
 
       <ul class="services-slider-list">
-        <li class="services-slider-item services-slider__item_active">
+        <li class="services-slider-item services-slider-item-del services-slider__item_active">
           <h2 class="section-title title">Доставка</h2>
           <p>
-            Мы с удовольствием доставим ваш товар прямо к вашему подъезду
-            совершенно бесплатно! Ведь мы неплохо заработаем, поднимая его на
+            Мы с удовольствием доставим ваш товар прямо к вашему<br> подъезду
+            совершенно бесплатно! Ведь мы неплохо<br> заработаем, поднимая его на
             ваш этаж.
           </p>
         </li>
-        <li class="services-slider-item">
+        <li class="services-slider-item services-slider-item-warr">
           <h2 class="section-title title">Гарантия</h2>
           <p>
             Если из-за возгорания купленного у нас товара у вас сгорит дом — не
-            переживайте, мы выдадим вам новый. Товар, не дом, конечно же.
+            переживайте, мы выдадим вам новый.<br> Товар, не дом, конечно же.
           </p>
         </li>
-        <li class="services-slider-item">
+        <li class="services-slider-item services-slider-item-cred">
           <h2 class="section-title title">Кредит</h2>
           <p>
             Залезть в долговую яму стало проще! Кредитные консультанты подберут
-            для вас наиболее выгодные условия кредита. Выгодные для нашего
+            для вас наиболее выгодные<br> условия кредита. Выгодные для нашего
             банка, разумеется.
           </p>
         </li>
@@ -281,7 +274,7 @@
         Огромный выбор гаджетов не оставит равнодушным гика, <br> который есть в
         каждом из нас.
       </p>
-      <p>
+      <p class="about-us-company">
         Мы можем доставить ваш товар в самые отдаленные точки <br> России! DEVICE
         работает со многими транспортными компаниями:
       </p>
@@ -290,7 +283,9 @@
         <li>Автотрейдинг</li>
         <li>ЖелДорЭкспедиция</li>
       </ul>
-      <a href="#" class="btn">Подробнее о нас</a>
+      <a href="#" class="btn">
+        <span class="btn-text">Подробнее о нас</span>
+      </a>
     </section>
 
     <section class="contacts">
@@ -302,7 +297,9 @@
       <a class="contacts__map">
         <img src="img/map-contact.jpg" width="560" height="222" alt="Карта офиса по адресу улица Строителей 15"/>
       </a>
-      <button type="button" class="btn">Напишите нам</button>
+      <button type="button" class="btn">
+        <span class="btn-text">Напишите нам</span>
+      </button>
     </section>
   </div>
 </main>
@@ -320,13 +317,13 @@
       </a>
       <ul class="user-routes">
         <li class="user-routes-item">
-          <a class="user-routes-link" href="#">Войти</a>
+          <a class="user-routes-link user-routes-link-login" href="#">Войти</a>
         </li>
         <li class="user-routes-item">
-          <a class="user-routes-link" href="#">Сравнить</a>
+          <a class="user-routes-link user-routes-link-compare" href="#">Сравнить</a>
         </li>
         <li class="user-routes-item">
-          <a class="user-routes-link" href="#">Корзина</a>
+          <a class="user-routes-link user-routes-link-basket" href="#">Корзина</a>
         </li>
       </ul>
     </section>
@@ -350,16 +347,16 @@
     <section class="main-footer-bottom">
       <ul class="social">
         <li class="social-item">
-          <a class="social-link" href="#">Фейсбук</a>
+          <a class="social-link social-link-facebook" href="#">Facebook</a>
         </li>
         <li class="social-item">
-          <a class="social-link" href="#">Инстаграм</a>
+          <a class="social-link social-link-insta" href="#">Instagram</a>
         </li>
         <li class="social-item">
-          <a class="social-link" href="#">Твиттер</a>
+          <a class="social-link social-link-twitter" href="#">Twitter</a>
         </li>
       </ul>
-      <a href="https://htmlacademy.ru/intensive/htmlcss">HTML Academy</a>
+      <a class="html-academy-logo" href="https://htmlacademy.ru/intensive/htmlcss">HTML Academy</a>
     </section>
 
   </div>
