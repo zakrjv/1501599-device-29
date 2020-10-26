@@ -625,10 +625,7 @@ img {
   background-color: var(--basic-white);
 }
 
-.promo-slider-1 .promo-slider__content::after,
-.promo-slider-2 .promo-slider__content::after,
-.promo-slider-3 .promo-slider__content::after {
-  content: "01";
+.promo-slider__number {
   position: absolute;
 
   top: 78px;
@@ -642,14 +639,6 @@ img {
   color: var(--basic-white);
 
   z-index: -1;
-}
-
-.promo-slider-2 .promo-slider__content::after {
-  content: "02";
-}
-
-.promo-slider-3 .promo-slider__content::after {
-  content: "03";
 }
 
 .promo-slider__description {
@@ -733,7 +722,7 @@ img {
 /* Popular */
 
 .popular {
-  margin-bottom: 185px;
+  margin-bottom: 165px;
 }
 
 .popular-list {
@@ -753,21 +742,29 @@ img {
 }
 
 .popular-item {
-  margin-bottom: 80px;
+  margin-bottom: 20px;
 }
 
 .popular-link {
   display: block;
-  position: relative;
-
-  height: 160px;
 
   color: var(--basic-black);
-
-  background-image: linear-gradient(var(--special-yellow), var(--special-yellow));
 }
 
-.popular-link::before {
+.popular-link-title {
+  position: relative;
+}
+
+.popular-link-background {
+  position: absolute;
+
+  width: 160px;
+  height: 160px;
+
+  background-color: var(--special-yellow);
+}
+
+.popular-link-title::before {
   content: "";
   display: block;
 
@@ -808,16 +805,15 @@ img {
   background-image: url("../img/popular/quadcopters.svg");
 }
 
-.popular-link:hover {
-  background-image: linear-gradient(var(--special-yellow-dark), var(--special-yellow-dark));
+.popular-link:hover .popular-link-background {
+  background-color: var(--special-yellow-dark);
 }
 
 .popular-link:active {
   color: var(--basic-black-transparent-30);
-
 }
 
-.popular-link:active::before {
+.popular-link-title:active::before {
   opacity: 0.3;
 }
 
@@ -1279,8 +1275,16 @@ img {
   color: var(--basic-white-transparent-70)
 }
 
-.main-footer-top .user-routes-link::before {
-  filter: invert(27%) sepia(51%) saturate(3300%) hue-rotate(47deg) brightness(200%) contrast(97%);
+.main-footer-top .user-routes-link-login::before {
+  background-image: url("../img/footer/user.svg");
+}
+
+.main-footer-top .user-routes-link-compare::before{
+  background-image: url("../img/footer/compare.svg");
+}
+
+.main-footer-top .user-routes-link-basket::before {
+  background-image: url("../img/footer/basket.svg");
 }
 
 .main-footer-top .user-routes-link:hover {
