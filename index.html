@@ -195,7 +195,7 @@
         <a class="popular-link popular-link-vr" href="#">Виртуальная реальность</a>
       </li>
       <li class="popular-item">
-        <a class="popular-link popular-link-monopods" href="#">Моноподы<br> для селфи</a>
+        <a class="popular-link popular-link-monopods" href="catalog.html">Моноподы<br> для селфи</a>
       </li>
       <li class="popular-item">
         <a class="popular-link popular-link-camera" href="#">Экшн-камеры</a>
@@ -376,5 +376,34 @@
 
   </div>
 </footer>
+
+<section class="modal modal-map">
+  <h2 class="visually-hidden">Как до нас добраться</h2>
+  <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2249.112374952848!2d37.527423951464876!3d55.687034004434516!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46b54cf65f5c8955%3A0x694710ccd55501e!2z0YPQuy4g0KHRgtGA0L7QuNGC0LXQu9C10LksIDE1LCDQnNC-0YHQutCy0LAsIDExOTMxMQ!5e0!3m2!1sru!2sru!4v1603957996582!5m2!1sru!2sru" width="960" height="600" allowfullscreen title="Карта офиса по адресу улица Строителей 15, Москва"></iframe>
+  <button type="button" class="btn-modal-close" aria-label="Закрыть"></button>
+</section>
+
+<section class="modal modal-write">
+  <h2 class="visually-hidden">Напишите нам</h2>
+  <form class="form-write" action="https://echo.htmlacademy.ru" method="post">
+    <div class="write-data">
+      <p>
+        <label for="write-name">Ваше имя:</label>
+        <input id="write-name" type="text" name="your-name" placeholder="Имя Фамилия">
+      </p>
+      <p>
+        <label for="write-email">Ваш e-mail:</label>
+        <input id="write-email" type="email" name="your-email" placeholder="email@example.com">
+      </p>
+    </div>
+    <p class="write-text">
+      <label for="write-text">Текст письма:</label>
+      <textarea id="write-text" name="your-message" placeholder="В свободной форме"></textarea>
+    </p>
+    <button class="btn" type="button"><span class="btn-text">Отправить</span></button>
+    <button type="button" class="btn-modal-close" aria-label="Закрыть"></button>
+  </form>
+</section>
+
 </body>
 </html>

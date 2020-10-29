@@ -102,11 +102,80 @@
     <div class="catalog-grid container">
 
       <div class="filter-title-wrapper">
-        <h2 class="filter-title title">Фильтр:</h2>
+        <p class="filter-title title">Фильтр:</p>
       </div>
 
-      <section class="form-filter">
-        <!-- Здесь будет форма фильтра -->
+      <section class="filter">
+        <h2 class="visually-hidden">Форма фильтра</h2>
+        <form class="form-filter" action="https://echo.htmlacademy.ru" method="get">
+
+          <fieldset class="filter-price">
+            <legend>Стоимость</legend>
+            <div class="range-filter">
+
+              <div class="range-controls">
+                <div class="scale">
+                  <div class="bar"></div>
+                </div>
+                <div class="toggle toggle-min" tabindex="0"></div>
+                <div class="toggle toggle-max" tabindex="0"></div>
+              </div>
+
+              <div class="price-controls">
+                <label class="min-price">
+                  от <input type="number" name="min-price" value="0">
+                </label>
+                <label class="max-price">
+                  до <input type="number" name="max-price" value="5000">
+                </label>
+              </div>
+
+            </div>
+          </fieldset>
+
+          <fieldset class="filter-color">
+            <legend>Цвет</legend>
+            <ul class="filter-list">
+              <li class="filter-option">
+                <input class="visually-hidden filter-input-checkbox" type="checkbox" id="color-black" name="black" checked>
+                <label for="color-black">Черный</label>
+              </li>
+              <li class="filter-option">
+                <input class="visually-hidden filter-input-checkbox" type="checkbox" id="color-white" name="white">
+                <label for="color-white">Белый</label>
+              </li>
+              <li class="filter-option">
+                <input class="visually-hidden filter-input-checkbox" type="checkbox" id="color-blue" name="blue" checked>
+                <label for="color-blue">Синий</label>
+              </li>
+              <li class="filter-option">
+                <input class="visually-hidden filter-input-checkbox" type="checkbox" id="color-red" name="red" checked>
+                <label for="color-red">Красный</label>
+              </li>
+              <li class="filter-option">
+                <input class="visually-hidden filter-input-checkbox" type="checkbox" id="color-pink" name="pink">
+                <label for="color-pink">Розовый</label>
+              </li>
+            </ul>
+          </fieldset>
+
+          <fieldset class="filter-bluetooth">
+            <legend>Bluetooth</legend>
+            <ul class="filter-list">
+              <li class="filter-option">
+                <input class="visually-hidden filter-input-radio" type="radio" id="bluetooth-on" name="bluetooth" value="bluetooth-on" checked>
+                <label for="bluetooth-on">Есть</label>
+              </li>
+              <li class="filter-option">
+                <input class="visually-hidden filter-input-radio" type="radio" id="bluetooth-off" name="bluetooth" value="bluetooth-off">
+                <label for="bluetooth-off">Нет</label>
+              </li>
+            </ul>
+          </fieldset>
+
+          <button class="btn" type="button"><span class="btn-text">Показать</span></button>
+
+        </form>
       </section>
 
       <section class="sorting">
@@ -124,14 +193,14 @@
         </ul>
         <ul class="arrow-list">
           <li class="arrow-list-item">
-            <button class="sorting-arrow" type="button">
+            <button class="sorting-arrow" type="button" aria-label="Сортировать по возрастанию">
               <svg width="18" height="18">
                 <polygon class="sorting-arrow__up sorting-arrow_use" points="2,14 8,4 14,14"></polygon>
               </svg>
             </button>
           </li>
           <li class="arrow-list-item">
-            <button class="sorting-arrow" type="button">
+            <button class="sorting-arrow" type="button" aria-label="Сортировать по убыванию">
               <svg width="18" height="18">
                 <polygon class="sorting-arrow__down sorting-arrow_use" points="3,4 15,4 9,14"></polygon>
               </svg>
@@ -166,7 +235,7 @@
             />
             <div class="catalog-info-wrapper">
               <a class="catalog-title-link" href="#">
-                <h3 class="title catalog-title">Профессиональная селфи-палка</h3>
+                <h3 class="title catalog-title">Профессиональная<br> селфи-палка</h3>
               </a>
               <p class="catalog-price">1 500 руб.</p>
             </div>
@@ -182,7 +251,7 @@
             />
             <div class="catalog-info-wrapper">
               <a class="catalog-title-link" href="#">
-                <h3 class="title catalog-title">Непотопляемая селфи-палка</h3>
+                <h3 class="title catalog-title">Непотопляемая<br> селфи-палка</h3>
               </a>
               <p class="catalog-price">1 500 руб.</p>
             </div>
@@ -191,7 +260,7 @@
               <button class="btn-add" type="button">Добавить к сравнению</button>
             </div>
           </li>
-          <li class="catalog-item">
+          <li class="catalog-item catalog-item-new">
             <img
               src="img/catalog/follow-stick.jpg" width="360" height="380"
               alt="Селфи-палка «Следуй за мной»"
