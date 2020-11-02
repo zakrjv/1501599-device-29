@@ -616,16 +616,16 @@ img {
 
 .promo-slider__item {
   display: none;
+  grid-template-columns: 1fr 1fr;
+  gap: 40px;
+
+  margin-top: -130px;
 
   position: relative;
 }
 
 .promo-slider__item_active {
   display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 40px;
-
-  margin-top: -130px;
 }
 
 .promo-slider__image {
@@ -1008,7 +1008,7 @@ img {
 .index-columns {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  gap: 40px;
+  gap: 20px;
 
   margin-bottom: 75px;
 }
@@ -1737,9 +1737,22 @@ img {
   z-index: 200;
 }
 
+.modal-show {
+  display: block;
+  animation: bounce 0.6s;
+}
+
+.modal-error {
+  animation: shake 0.6s;
+}
+
 .modal-map {
   width: 960px;
   height: 600px;
+}
+
+.contacts__map {
+  cursor: pointer;
 }
 
 .modal-map iframe {
@@ -1839,4 +1852,47 @@ img {
 
 .btn-modal-close:hover {
   opacity: 1;
+}
+
+
+/* Animations */
+
+@keyframes bounce {
+  0% {
+    transform: translateX(-2000px);
+  }
+
+  70% {
+    transform: translateX(30px);
+  }
+
+  90% {
+    transform: translateX(-10px);
+  }
+
+  100% {
+    transform: translateX(0);
+  }
+}
+
+@keyframes shake {
+  0%,
+  100% {
+    transform: translateX(0);
+  }
+
+  10%,
+  30%,
+  50%,
+  70%,
+  90% {
+    transform: translateX(-10px);
+  }
+
+  20%,
+  40%,
+  60%,
+  80% {
+    transform: translateX(10px);
+  }
 }
