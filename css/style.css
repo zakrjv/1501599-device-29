@@ -248,7 +248,7 @@ img {
 .section-title {
   width: 580px;
 
-  margin-bottom: 40px;
+  margin-bottom: 41px;
 
   font-size: 47px;
   line-height: 58px;
@@ -495,7 +495,7 @@ img {
 
   width: 1160px;
   height: 160px;
-  padding: 30px 60px;
+  padding: 25px 60px;
 
   font-family: var(--opensans-font-family);
   font-size: 15px;
@@ -507,16 +507,17 @@ img {
 }
 
 .catalog-routes .catalog-routes-item {
-  margin-right: 50px;
+  margin-right: 65px;
+  margin-bottom: 6px;
+}
+
+.catalog-routes .catalog-routes-watch {
+  margin-bottom: 20px;
 }
 
 .site-routes > li:hover .catalog-routes {
   display: flex;
   z-index: 2;
-}
-
-.link-copter {
-  margin-bottom: 30px;
 }
 
 
@@ -757,7 +758,7 @@ img {
 }
 
 .promo-slider-table td {
-  padding-bottom: 15px;
+  padding-bottom: 13px;
 
   font-size: 36px;
   line-height: 42px;
@@ -909,7 +910,7 @@ img {
 .services-slider-controls .btn {
   min-width: 160px;
 
-  margin-bottom: 23px;
+  margin-bottom: 22px;
   padding: 9px 19px;
 }
 
@@ -970,7 +971,7 @@ img {
 /* Partners */
 
 .partners {
-  margin-bottom: 83px;
+  margin-bottom: 84px;
 }
 
 .partners-list {
@@ -1003,8 +1004,15 @@ img {
 
   width: 260px;
 
-  margin-top: 70px;
   padding: 9px 18px;
+}
+
+.about-us .btn {
+  margin-top: 71px;
+}
+
+.contacts .btn {
+  margin-top: 68px;
 }
 
 .index-columns {
@@ -1033,7 +1041,7 @@ img {
 }
 
 .about-us .about-us-company {
-  margin-bottom: 60px;
+  margin-bottom: 59px;
 }
 
 .about-us__list {
@@ -1170,7 +1178,10 @@ img {
   border-top: 2px solid var(--basic-black);
 }
 
-
+.form-filter .filter-bluetooth-title {
+  margin-bottom: 27px;
+  padding-top: 13px;
+}
 
 .form-filter .filter-price {
   margin-bottom: 35px;
@@ -1790,7 +1801,7 @@ img {
 
   width: 960px;
 
-  padding: 92px 100px 69px 100px;
+  padding: 92px 100px 55px 100px;
 }
 
 .form-write {
@@ -1807,7 +1818,7 @@ img {
 
 .write-text,
 .write-data {
-  margin-bottom: 40px;
+  margin-bottom: 35px;
 }
 
 .form-write label {
