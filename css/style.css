@@ -1598,6 +1598,8 @@ img {
 .main-footer-logo {
   display: inline-block;
   align-self: flex-end;
+
+  vertical-align: bottom;
 }
 
 .main-footer-top .user-routes {
